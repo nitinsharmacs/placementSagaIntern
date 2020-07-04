@@ -1,0 +1,24 @@
+.SideDrawer {
+	position:fixed;left:0;top:60px;bottom:0;background:linear-gradient(to right, #6282ea, #1167f1);z-index: 100;transition: all 0.3s ease-out;width:80%;box-shadow:0px 2px 5px 2px #726161;border-radius:0px 5px 5px 0px;overflow-y:auto;
+}
+
+.Open {
+	transform:translateX(0);
+}
+.Close{
+	transform:translateX(-200%);
+}
+
+.linklist{
+	list-style: none;margin-top:50px;
+}
+.linklist li{
+	margin:20px 0px;padding:20px 0pc;
+}
+.linklist li a{
+	text-decoration: none;color:white;font-size:1.5rem;display: flex;align-items: center;
+}
+.linklist li a svg{
+	margin-left:5px;
+}
+

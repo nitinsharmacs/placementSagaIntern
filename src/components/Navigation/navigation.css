@@ -1,0 +1,71 @@
+.NavigationArea{
+	border-bottom:2px solid #ecdddd;
+}
+.Navigation{
+	display:flex;align-items: center;padding:10px;justify-content: space-around;
+}
+
+.Logo{
+	display: flex;flex:0.2;justify-content: flex-end;
+}
+.LogoName{
+	display: flex;flex-flow: column;justify-content: center;
+}
+.LogoName p[for=top],.LogoName p[for=bottom]{
+	margin:0;font-weight: normal;font-size:1.2rem;flex:0.2;text-align: right;
+}
+
+.Logo img{
+	height:40px;width:50px;border-radius: 5px;margin-left:10px;
+}
+.LoginBtn{
+	display:flex;flex:0.2;
+}
+.LoginBtn a{
+	position:relative;display: block;background:linear-gradient(to right, #708ce8, #1167f1);padding:10px 20px;border-radius: 5px;color:white;width:70px;text-align: center;cursor: pointer;overflow:hidden;
+}
+.LoginBtn a:hover > .flash{
+	top:0;left:200%;
+}
+@media screen and (min-width:1600px){
+	.Navigation{
+		width:1600px;margin:auto;height:60px;padding:15px;
+	}
+	.Logo{
+		flex:0.1;
+	}
+	.LogoName p[for=top],.LogoName p[for=bottom]{
+		font-size:1.8rem;
+	}
+	.LogoName p[for=bottom]{
+		margin-top:-5px;
+	}
+	.Logo img{
+		height:70px;width:80px;
+	}
+	.LoginBtn{
+		flex:0.1;
+	}
+	.LoginBtn a{
+		padding:15px 20px;font-size:1.2rem;
+	}
+}
+@media screen and (max-width:800px){
+	.Navigation{
+		padding:10px 20px;justify-content: space-between;
+	}
+	.LoginBtn{
+		justify-content: flex-end;
+	}
+}
+@media screen and (max-width:515px){
+	.LoginBtn a{
+		width:40px;
+	}
+	.Logo h1{
+		font-size:1rem;
+	}
+	.Logo img{
+		height:30px;width: 35px;
+	}
+}

@@ -1,0 +1,35 @@
+.NavigationItems{
+	list-style:none;padding:0px 10px;margin:0;display: flex;flex:0.7;justify-content: flex-end;
+}
+.NavigationItems li{
+	margin:0px 15px;
+}
+.NavigationItems li a{
+	text-decoration: none;color:black;
+}
+
+@media screen and (min-width:1600px){
+	.NavigationItems li a{
+		font-size:1.2rem;
+	}
+	.NavigationItems li{
+		margin:0px 25px;
+	}
+}
+@media screen and (max-width:978px){
+	.NavigationItems{
+		flex:1;
+	}
+}
+
+@media screen and (max-width:854px){
+	.NavigationItems{
+		flex:1.5;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.NavigationItems{
+		display: none;
+	}
+}
